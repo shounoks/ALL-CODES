@@ -1,0 +1,28 @@
+/* mystyle.css ফাইল */
+
+/* ১. পুরো পেজের ব্যাকগ্রাউন্ড এবং ফন্ট ঠিক করা */
+body {
+  background-color: #f4f4f4; /* হালকা ধূসর রঙ */
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+/* ২. হেডিং (h1) এর ডিজাইন */
+h1 {
+  color: #2c3e50; /* গাঢ় নীলচে রঙ */
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* ৩. প্যারাগ্রাফ (p) এর ডিজাইন */
+p {
+  color: #555;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  line-height: 1.6; /* লাইনের মাঝখানে গ্যাপ */
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #2ecc71; /* বাম পাশে সবুজ বর্ডার */
+}

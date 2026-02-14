@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Math Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-card {
+            background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+            padding: 40px;
+            width: 450px;
+            border-radius: 5px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 { text-align: center; font-size: 50px; margin: 0 0 20px 0; font-weight: 400; }
+        
+        label { display: block; font-size: 18px; margin-bottom: 5px; }
+        
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background: #fdfdfd;
+        }
+
+        .pass-box { position: relative; }
+        .hint { position: absolute; right: 5px; bottom: 25px; font-size: 12px; font-weight: bold; }
+
+        /* Math Styling */
+        .captcha-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .math-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .integral-symbol {
+            font-size: 80px;
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+        }
+
+        .numerator {
+            border-bottom: 1px solid black;
+            padding: 2px 10px;
+            font-size: 14px;
+        }
+
+        .denominator {
+            padding: 2px 10px;
+            font-size: 14px;
+        }
+
+        .sqrt {
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            padding: 0 2px;
+            margin-left: 2px;
+        }
+
+        .answer-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ans-input {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 80px;
+            background: transparent;
+            outline: none;
+            text-align: center;
+        }
+
+        .ans-label { font-size: 12px; margin-top: 4px; }
+
+        .btn {
+            background-color: #4a6b8a;
+            color: white;
+            padding: 8px 20px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-card">
+    <h1>Login</h1>
+    
+    <label>Username</label>
+    <input type="text">
+
+    <div class="pass-box">
+        <label>Password</label>
+        <input type="password">
+        <span class="hint">Shounok pagol hye gese</span>
+    </div>
+
+    <div class="captcha-container">
+        <div style="font-size: 22px; margin-bottom: 10px;">Are you human</div>
+        
+        <div class="math-row">
+            <span class="integral-symbol">∫</span>
+            
+            <div class="fraction">
+                <div class="numerator">
+                    [cos<sup>-1</sup>x { <span class="sqrt">√(1-x<sup>2</sup>)</span> }]<sup>-1</sup> dx
+                </div>
+                <div class="denominator">
+                    log<sub>e</sub> { 1 + ( <span class="fraction" style="font-size: 10px;">
+                        <span class="numerator">sin (2x<span class="sqrt">√(1-x<sup>2</sup>)</span>)</span>
+                        <span class="denominator">π</span>
+                    </span> ) }
+                </div>
+            </div>
+
+            <div class="answer-box">
+                <input type="text" class="ans-input">
+                <span class="ans-label">answer</span>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn">SEND</button>
+</div>
+
+</body>
+</html>

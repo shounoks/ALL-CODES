@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Student Information Form</h1>
+    <br>
+    <fieldset>
+        <legend><b>Personal Information<b></legend>
+        <label for="text">First name :</label>
+        <input type="text"placeholder="Enter your First Name ">
+
+        &nbsp;
+        
+        <lebel for="text">Last name : </lebel>
+        <input type="text"placeholder="Enter your Last Name">
+        <br><br>
+
+
+        <label for="age">Age :</label>
+        <input type="age"placeholder="Enter your Age" minimum=0>
+
+        &nbsp;
+
+        <label for="date">Date of Birth(mm/dd/yy) : </label>
+        <input type="date">
+        
+        <br><br>
+        <label for="favcolor">Favourite Color :</label>
+        <input type="color">
+
+        &nbsp;
+        <label for="password">Password : </label>
+            <input type="password"placeholder="**********">
+        <br><br>
+        <label for="address">Address :</label><br> 
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your full address " required></textarea>
+    </fieldset>
+
+
+    <br>
+
+    <fieldset>
+        <legend>Education</legend>
+        <label for="dep">Select Department : </label>
+        <select>
+            <option>SWE</option>
+            <option>CSE</option>
+            <option>MCT</option>
+        </select>
+        <br><br>
+        <label for="ssec">Select Section : </label>
+            <input type="text"placeholder="Write/Choose your section">
+        <br><br>
+        <label for="pls">Programming Langauge Skills :  </label>
+            Low<input type="range">High
+        <br><br>
+        <label for="pls">Web Technology Skills :  </label>
+            Low<input type="range">High
+        <br><br>
+        <label for="selcimg">Select a file : </label>
+            <input type="file">
+
+    </fieldset>
+    <br><br>
+
+    <button style = "font-size: 20px;background-color: green; border-radius: 5px; border-color:whitesmoke;  "><font color="white">Submit</font></button>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../C Code"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML,CSS,JS"
+	}
+}
